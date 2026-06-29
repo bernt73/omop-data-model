@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OMOP CDM Data Modeling — Conceptual, Logical &amp; Physical</title>
+  <meta name="description" content="Data modeling at three levels of abstraction — conceptual, logical, and physical — applied to the OMOP Common Data Model." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">OMOP CDM &middot; Data Modeling</a>
+      <nav class="nav-links">
+        <a href="conceptual.html">Conceptual</a>
+        <a href="logical.html">Logical</a>
+        <a href="physical.html">Physical</a>
+        <a href="https://github.com/bernt73/omop-data-model" target="_blank" rel="noopener">Repo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Data Modeling Portfolio</span>
+      <h1>One healthcare domain, modeled three times.</h1>
+      <p class="lede">A walkthrough of data modeling at three levels of abstraction —
+        conceptual&nbsp;&rarr; logical&nbsp;&rarr; physical — applied to the
+        <a href="https://ohdsi.github.io/CommonDataModel/" target="_blank" rel="noopener">OMOP Common Data Model</a>
+        (v5.4), the international standard for observational healthcare data.</p>
+      <p>Most data modeling portfolios show one diagram. This one deliberately shows
+        the same domain three times, at three levels of detail, because the
+        <em>transitions between levels</em> — what gets simplified, what gets kept,
+        and why — are where the actual design judgment lives.</p>
+    </section>
+
+    <section class="cards">
+      <a class="card" href="conceptual.html">
+        <span class="card-thumb"><img src="diagrams/1-conceptual-er.png" alt="Conceptual ER diagram preview" loading="lazy" /></span>
+        <span class="card-body">
+          <span class="card-step">Level 1</span>
+          <h2>Conceptual</h2>
+          <p>Plain-language entities and verb-phrase relationships. No keys, no types — the "what happens to a patient" story.</p>
+        </span>
+      </a>
+
+      <a class="card" href="logical.html">
+        <span class="card-thumb"><img src="diagrams/2-logical-model.png" alt="Logical data model preview" loading="lazy" /></span>
+        <span class="card-body">
+          <span class="card-step">Level 2</span>
+          <h2>Logical</h2>
+          <p>Entities, primary keys, and foreign keys — the relationship structure, with every non-key attribute stripped out.</p>
+        </span>
+      </a>
+
+      <a class="card" href="physical.html">
+        <span class="card-thumb"><img src="diagrams/3-physical-model.png" alt="Physical data model preview" loading="lazy" /></span>
+        <span class="card-body">
+          <span class="card-step">Level 3</span>
+          <h2>Physical</h2>
+          <p>The implementation-ready schema: every column, data type, and constraint across all four OMOP schemas.</p>
+        </span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Diagrams &amp; documentation are original work (MIT). OMOP CDM spec maintained by <a href="https://www.ohdsi.org/" target="_blank" rel="noopener">OHDSI</a>.</span>
+      <span><a href="https://github.com/bernt73/omop-data-model" target="_blank" rel="noopener">View the repository &rarr;</a></span>
+    </div>
+  </footer>
+</body>
+</html>

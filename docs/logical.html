@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logical Model — OMOP CDM Data Modeling</title>
+  <meta name="description" content="Logical data model of the OMOP CDM clinical backbone — entities, primary keys, and foreign keys." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">OMOP CDM &middot; Data Modeling</a>
+      <nav class="nav-links">
+        <a href="conceptual.html">Conceptual</a>
+        <a href="logical.html" class="active">Logical</a>
+        <a href="physical.html">Physical</a>
+        <a href="https://github.com/bernt73/omop-data-model" target="_blank" rel="noopener">Repo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="diagram-head">
+      <div class="step">Level 2 &middot; Logical</div>
+      <h1>Logical Model</h1>
+      <p>Entities, primary keys, and foreign keys — the actual relationship structure —
+        with every non-key attribute stripped out. Dropping every <code>*_concept_id</code>
+        lookup into the vocabulary system takes the model from 140 relationships down to 31,
+        leaving only the person&nbsp;&rarr;&nbsp;visit&nbsp;&rarr;&nbsp;clinical-event backbone visible.</p>
+      <span class="scope">Scope: Clinical Data only</span>
+    </section>
+
+    <div class="viewer" id="viewer">
+      <div class="hint">Drag to pan &middot; scroll to zoom &middot; double-click to zoom in</div>
+      <img src="diagrams/2-logical-model.png" alt="Logical data model of the OMOP CDM clinical data backbone" />
+      <div class="controls">
+        <button data-action="out" title="Zoom out" aria-label="Zoom out">&minus;</button>
+        <button data-action="in" title="Zoom in" aria-label="Zoom in">+</button>
+        <button data-action="reset" class="label" title="Fit to screen">Fit</button>
+        <button data-action="fullscreen" title="Fullscreen" aria-label="Fullscreen">&#9974;</button>
+      </div>
+    </div>
+
+    <nav class="page-nav">
+      <a href="conceptual.html">&larr; Previous: Conceptual Model</a>
+      <a href="physical.html">Next: Physical Model &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Diagrams &amp; documentation are original work (MIT).</span>
+      <span><a href="https://github.com/bernt73/omop-data-model" target="_blank" rel="noopener">View the repository &rarr;</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/viewer.js"></script>
+</body>
+</html>

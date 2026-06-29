@@ -1,0 +1,13 @@
+{
+  "name": "omop-data-model-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Contract and unit tests for the OMOP CDM data-modeling GitHub Pages site",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "node-html-parser": "^6.1.13"
+  }
+}
