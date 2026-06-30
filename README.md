@@ -2,7 +2,7 @@
 
 A complete walkthrough of data modeling at three levels of abstraction —
 **conceptual → logical → physical** — applied to the [OMOP Common Data
-Model](https://ohdsi.github.io/CommonDataModel/) (v5.4), the international
+Model](https://ohdsi.github.io/CommonDataModel/) (v5.4), the community driven
 standard for representing observational healthcare data.
 
 Most data modeling portfolios show one diagram. This repo deliberately
@@ -19,13 +19,6 @@ each level on its own page with a pan-and-zoom viewer, since the diagrams
 are large enough that a static image is hard to read:
 
 **→ https://bernt73.github.io/omop-data-model/**
-
-To enable it: push this repo to GitHub, then go to **Settings → Pages**
-and set the source to **Deploy from a branch**, branch **`main`**, folder
-**`/docs`**. The site goes live at the URL above within a minute. The
-`docs/` folder is self-contained (HTML, CSS, a small vanilla-JS pan-zoom
-viewer with no external dependencies, and copies of the diagrams), so the
-site needs no build step.
 
 ---
 
