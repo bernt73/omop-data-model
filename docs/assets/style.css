@@ -108,6 +108,46 @@ a:hover { text-decoration: underline; }
 .card-body h2 { font-size: 19px; margin: 6px 0 8px; }
 .card-body p { font-size: 14px; color: var(--muted); margin: 0; }
 
+/* ---------- Reference strip (data dictionary) ---------- */
+.reference { padding: 0 0 56px; }
+.reference-strip {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+  color: inherit;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.reference-strip:hover {
+  transform: translateY(-2px);
+  border-color: #cdd9f2;
+  box-shadow: 0 2px 6px rgba(20,30,50,.08), 0 14px 40px rgba(20,30,50,.12);
+  text-decoration: none;
+}
+.reference-icon {
+  font-size: 26px;
+  line-height: 1;
+  flex: 0 0 auto;
+}
+.reference-text { flex: 1 1 auto; font-size: 14px; color: var(--muted); }
+.reference-text strong {
+  display: block;
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.reference-cta {
+  flex: 0 0 auto;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
 /* ---------- Diagram page ---------- */
 .diagram-head { padding: 36px 0 20px; }
 .diagram-head .step {
@@ -212,5 +252,6 @@ a:hover { text-decoration: underline; }
   .cards { grid-template-columns: 1fr; }
   .hero h1 { font-size: 27px; }
   .viewer { height: 62vh; }
-  .nav-links { gap: 12px; }
+  .nav-links { gap: 12px; flex-wrap: wrap; }
+  .reference-strip { flex-direction: column; align-items: flex-start; gap: 10px; }
 }
