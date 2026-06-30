@@ -48,7 +48,7 @@ subject for demonstrating data modeling skill beyond toy schemas.
 
 Entities only, in plain business language (**Patient**, **Visit**,
 **Diagnosis** — not `person`, `visit_occurrence`, `condition_occurrence`),
-connected by verb-phrase relationships ("Patient *has* Visit", "Visit
+connected by verb-phrase relationships ("Patient *makes* Visit", "Visit
 *results in* Diagnosis"). No keys, no data types, no cardinality
 notation — built to be reviewed and validated with non-technical
 stakeholders *before* any schema decisions are made.
